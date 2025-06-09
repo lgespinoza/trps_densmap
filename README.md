@@ -1,2 +1,2 @@
-# trps_densmap
-Fingerprints_densmap
+# Tutorial TRP-densmap analysis
+
