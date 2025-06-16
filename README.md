@@ -84,7 +84,7 @@ echo "$group_pvp2" | gmx densmap -f traj_merged.xtc -s $tpr -n $index -bin 0.2 -
 
 ---
 
-## 📤 Output Files
+##  Output Files
 
 - `repX_pip2_map.xpm` – 2D density map for each replica  
 - `merged_pip2_map.xpm` – Combined density map from all replicas  
@@ -92,24 +92,24 @@ echo "$group_pvp2" | gmx densmap -f traj_merged.xtc -s $tpr -n $index -bin 0.2 -
 
 ---
 
-## 🖥️ Python Plotting Script
+##  Python Plotting Script
 
 This script reads GROMACS `.xpm` density map files and converts them into `.svg` images using a consistent colormap (`plasma`) and a fixed value range (`vmin=0.0`, `vmax=0.4`). This allows reliable visual comparison across multiple density maps.
 
-### ✅ Features
+###  Features
 
 - **Colormap**: `plasma`  
 - **Scale**: fixed between 0.0 and 0.4  
 - **Input**: all `.xpm` files in the current directory  
 - **Output**: one `.svg` per `.xpm` file
 
-### 💾 Usage
+###  Usage
 
 ```bash
 python plot_xpm.py
 ```
 
-### 🧠 Script
+### Script
 
 ```python
 import os
