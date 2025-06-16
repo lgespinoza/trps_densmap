@@ -1,13 +1,13 @@
 # TRP Densmap Fingerprints Tutorial
 
-## 📦 Requirements
+##  Requirements
 
 Before starting, make sure you have the following tools installed:
 
 - **GROMACS** – for trajectory processing and density map generation  
 - **Matplotlib** – (optional) for custom visualization of `.xpm` outputs
 
-## 📁 Input Files
+##  Input Files
 
 To run the analysis, you will need the following:
 
@@ -20,17 +20,17 @@ To run the analysis, you will need the following:
 
 ---
 
-## 🧪 Densmap Analysis Workflow
+##  Densmap Analysis Workflow
 
 This section describes how to process multiple MD replicas to generate 2D density maps (fingerprints) for the **PVP2** group (e.g., PIP₂ molecules) using GROMACS.
 
-### 🔖 Input Assumptions
+### Input Assumptions
 
 - Trajectories: `rep1.xtc`, `rep2.xtc`, `rep3.xtc` (in `xtc/`)
 - Run input file: `tpr/rep1.tpr`
 - Index file: `index.ndx`, containing a group named `PVP2`
 
-### ⚙️ Preprocessing and Densmap Steps
+###  Preprocessing and Densmap Steps
 
 Each replica is:
 
@@ -43,7 +43,7 @@ Afterward, the replicas are **merged**, and a final combined density map is comp
 
 ---
 
-## ▶️ Bash Script
+##  Bash Script
 
 Save the following as `run_densmap.sh` and make it executable:
 
